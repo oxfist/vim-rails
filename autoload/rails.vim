@@ -3932,8 +3932,8 @@ function! rails#ruby_syntax() abort
       exe "syn keyword rubyUserAssertion ".join(rails#app().user_assertions())
     endif
     syn keyword rubyTestMacro test setup teardown
-    syn keyword rubyAssertion refute refute_empty refute_equal refute_in_delta refute_in_epsilon refute_includes refute_instance_of refute_kind_of refute_match refute_nil refute_operator refute_predicate refute_respond_to refute_same
-    syn keyword rubyAssertion assert assert_block assert_equal assert_includes assert_in_delta assert_instance_of assert_kind_of assert_match assert_nil assert_no_match assert_not assert_not_equal assert_not_includes assert_not_nil assert_not_same assert_nothing_raised assert_nothing_thrown assert_operator assert_raise assert_respond_to assert_same assert_send assert_throws
+    syn keyword rubyAssertion refute refute_empty refute_equal refute_empty refute_in_delta refute_in_epsilon refute_includes refute_instance_of refute_kind_of refute_match refute_nil refute_operator refute_predicate refute_respond_to refute_same
+    syn keyword rubyAssertion assert assert_block assert_equal assert_empty assert_includes assert_in_delta assert_instance_of assert_kind_of assert_match assert_nil assert_no_match assert_not assert_not_equal assert_not_includes assert_not_nil assert_not_same assert_nothing_raised assert_nothing_thrown assert_operator assert_raise assert_respond_to assert_same assert_send assert_throws assert_mock
     syn keyword rubyAssertion flunk
     syn keyword rubyAssertion assert_difference assert_no_difference
     syn keyword rubyTestAction travel travel_to travel_back
